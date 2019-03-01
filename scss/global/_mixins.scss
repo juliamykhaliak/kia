@@ -1,0 +1,26 @@
+@mixin text-shadow-black-titles() {
+  text-shadow: rgb(0,0,0) 0 0 5px;
+}
+@mixin dynamic-safe-sections-background() {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+}
+@mixin dynamic-safe-sections-title() {
+  font-size: $title-to-photo-net-cars;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 15px;
+  background-image: url("../images/dynamic-border-top.gif");
+  background-repeat: no-repeat;
+}
+@mixin dynamic-safety-sections-title-description() {
+  font-size: $title-dynamic-safety-sections;
+  line-height: 44px;
+  margin: 0;
+}
+@mixin dynamic-safety-sections-description-text() {
+  font-size: $main-menu-links;
+  padding: 10px 0 20px;
+}

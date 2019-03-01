@@ -1,0 +1,34 @@
+#safety-system-three-items {
+  .wrap-safety-system-block {
+    padding: 50px 10px 77px;
+    display: flex;
+    justify-content: space-between;
+    .safety-system-item {
+      .image-safety-system {
+        width: 280px;
+        height: 210px;
+        overflow: hidden;
+        img {
+          display: block;
+          width: 100%;
+          transition: all .5s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+          }
+        }
+      }
+      .text-about-safety-system-item {
+        width: 280px;
+        font-size: $button-phone-font-size;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: all .5s;
+      }
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

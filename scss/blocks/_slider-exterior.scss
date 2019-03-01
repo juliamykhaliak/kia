@@ -1,0 +1,110 @@
+#slider-exterior {
+  position: relative;
+  #attention-section {
+    @include dynamic-safe-sections-background();
+    background-image: url("../images/attention-exterior-slider-background.jpg");
+    .attention-wrap {
+      color: rgb(255, 255, 255);
+      padding: 37px 10px 0 10px;
+      @include text-shadow-black-titles();
+      .attention-title {
+        padding-bottom: 37px;
+        .word-attention {
+          @include dynamic-safe-sections-title();
+        }
+      }
+      .attention-description {
+        .attention-title-description {
+          @include dynamic-safety-sections-title-description();
+        }
+        .under-title-description-attention {
+          @include dynamic-safety-sections-description-text();
+        }
+      }
+    }
+  }
+  #style-section {
+    @include dynamic-safe-sections-background();
+    background-image: url("../images/style-exterior-slider-background.jpg");
+    .style-wrap {
+      color: rgb(255, 255, 255);
+      padding: 37px 10px 0 10px;
+      @include text-shadow-black-titles();
+      .style-title {
+        padding-bottom: 37px;
+        .word-style {
+          @include dynamic-safe-sections-title();
+        }
+      }
+      .style-description {
+        .style-title-description {
+          @include dynamic-safety-sections-title-description();
+        }
+        .under-title-description-style {
+          @include dynamic-safety-sections-description-text();
+        }
+      }
+    }
+  }
+  #stonic-slider-section {
+    @include dynamic-safe-sections-background();
+    background-image: url("../images/stonic-exterior-slider-background.jpg");
+    .stonic-slider-wrap {
+      color: rgb(255, 255, 255);
+      padding: 37px 10px 0 10px;
+      @include text-shadow-black-titles();
+      .stonic-slider-title {
+        padding-bottom: 37px;
+        .word-stonic-slider {
+          @include dynamic-safe-sections-title();
+        }
+      }
+      .stonic-slider-description {
+        .stonic-slider-title-description {
+          @include dynamic-safety-sections-title-description();
+        }
+        .under-title-description-stonic-slider {
+          @include dynamic-safety-sections-description-text();
+        }
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 138px);
+    height: 84px;
+    button {
+      span {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .owl-dot {
+      &:first-child span {
+        background-image: url("../images/unactive-dot-1-exterior-slider.png");
+      }
+      &:nth-child(2) span {
+        background-image: url("../images/unactive-dot-2-exterior-slider.png");
+      }
+      &:nth-child(3) span {
+        background-image: url("../images/unactive-dot-3-exterior-slider.png");
+      }
+    }
+    .active {
+      &:first-child span {
+        background-image: url("../images/dot-1-slider-exterior.png");
+      }
+      &:nth-child(2) span {
+        background-image: url("../images/dot-2-slider-exterior.png");
+      }
+      &:nth-child(3) span {
+        background-image: url("../images/dot-3-slider-exterior.png");
+      }
+    }
+  }
+}

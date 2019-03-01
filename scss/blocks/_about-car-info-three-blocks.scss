@@ -1,0 +1,44 @@
+.about-car-info-three-blocks {
+  .about-car-info-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about-info-lower,
+    .about-info-upper {
+      font-size: $stonic-links-font-size;
+      color: $color-subtitle-info-three-blocks;
+    }
+    .info-about-title {
+      color: $color-title-info-about-car-three-blocks;
+      font-size: $font-size-title-about-three-blocks;
+      line-height: 26px;
+      font-weight: bold;
+    }
+    .engine,
+    .power,
+    .garanty {
+      text-align: center;
+      padding: 0 10px;
+      height: 139px;
+      width: 319px;
+      img {
+        padding-top: 20px;
+      }
+    }
+    .engine,
+    .garanty {
+      background-color: $background-engine-garanty;
+    }
+    .power {
+      background-color: $background-power;
+    }
+    .engine,
+    .power {
+      border-left: 1px solid #d1d1d1;
+    }
+    .power,
+    .garanty {
+      border-right: 1px solid #d1d1d1;
+    }
+  }
+}

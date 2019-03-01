@@ -1,0 +1,81 @@
+#slider-interior {
+  position: relative;
+  #comfort-section {
+    @include dynamic-safe-sections-background();
+    background-image: url("../images/comfort-interior-slider-background.jpg");
+    .comfort-wrap {
+      color: rgb(255, 255, 255);
+      padding: 37px 10px 0 10px;
+      @include text-shadow-black-titles();
+      .comfort-title {
+        padding-bottom: 37px;
+        .word-comfort {
+          @include dynamic-safe-sections-title();
+        }
+      }
+      .comfort-description {
+        .comfort-title-description {
+          @include dynamic-safety-sections-title-description();
+        }
+        .under-title-description-comfort {
+          @include dynamic-safety-sections-description-text();
+        }
+      }
+    }
+  }
+  #space-section {
+    @include dynamic-safe-sections-background();
+    background-image: url("../images/space-interior-slider-background.jpg");
+    .space-wrap {
+      color: rgb(255, 255, 255);
+      padding: 37px 10px 0 10px;
+      @include text-shadow-black-titles();
+      .space-title {
+        padding-bottom: 37px;
+        .word-space {
+          @include dynamic-safe-sections-title();
+        }
+      }
+      .space-description {
+        .space-title-description {
+          @include dynamic-safety-sections-title-description();
+        }
+        .under-title-description-space {
+          @include dynamic-safety-sections-description-text();
+        }
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 92px);
+    height: 84px;
+    button {
+      span {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .owl-dot {
+      &:first-child span {
+        background-image: url("../images/unactive-dot-1-interior-slider.png");
+      }
+      &:nth-child(2) span {
+        background-image: url("../images/unactive-dot-2-interior-slider.png");
+      }
+    }
+    .active {
+      &:first-child span {
+        background-image: url("../images/dot-1-slider-interior.png");
+      }
+      &:nth-child(2) span {
+        background-image: url("../images/dot-2-slider-interior.png");
+      }
+    }
+  }
+}

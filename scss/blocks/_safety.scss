@@ -1,0 +1,22 @@
+#safety-section {
+  @include dynamic-safe-sections-background();
+  background-image: url("../images/safety-section-background.jpg");
+  .safety-wrap {
+    color: rgb(0, 0, 0);
+    padding: 37px 10px 0 10px;
+    .safety-title {
+      padding-bottom: 37px;
+      .word-safety {
+        @include dynamic-safe-sections-title();
+      }
+    }
+    .safety-description {
+      .safety-title-description {
+        @include dynamic-safety-sections-title-description();
+      }
+      .under-title-description-safety {
+        @include dynamic-safety-sections-description-text();
+      }
+    }
+  }
+}

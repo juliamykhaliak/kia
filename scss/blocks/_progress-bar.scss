@@ -1,0 +1,51 @@
+#progress-bar {
+  position: fixed;
+  top: calc(50vh - 140px);
+  right: 10px;
+  z-index: 3;
+  ul {
+    li {
+      margin: 5px 0;
+      position: relative;
+      a {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        font-size: $stonic-links-font-size;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        .unactive {
+          display: none;
+        }
+        .unactive-button-progress-bar {
+          width: 32px;
+          height: 32px;
+          background-image: url("../images/unactive-number-progress-bar.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all .3s;
+          &:hover {
+            background-image: url("../images/active-button-progress-bar.png");
+          }
+        }
+        .active-button-progress-bar {
+          background-image: url("../images/active-text-progress-bar.png");
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 216px;
+          height: 32px;
+          position: absolute;
+          z-index: -1;
+          right: 15px;
+          transition: all .5s;
+        }
+      }
+    }
+  }
+}

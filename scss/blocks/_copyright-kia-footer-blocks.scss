@@ -1,0 +1,32 @@
+.footer {
+  .copyright-kia-power-blocks {
+    .copyright-block {
+      padding-top: 6px;
+      background-color: $background-footer;
+      .copyright-wrapper {
+        .copyright-text {
+          text-transform: uppercase;
+          font-size: $font-size-nav-with-search;
+          color: $copyright-text-color;
+          line-height: 48px;
+        }
+      }
+    }
+    #kia-power-block {
+      height: 54px;
+      .kia-power-wrapper {
+        position: relative;
+        .kia-block-img {
+          height: 65px;
+          width: 177px;
+          position: absolute;
+          right: 0;
+          top: -35px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

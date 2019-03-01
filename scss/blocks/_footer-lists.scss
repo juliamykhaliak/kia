@@ -1,0 +1,44 @@
+#info-footer-section-lists {
+  border-bottom: 1px solid #d1d1d1;
+  border-top: 1px solid #d1d1d1;
+  background-color: #e4e5e6;
+  .wrapper-footer-info-lists-section {
+    display: flex;
+    padding: 19px 0 45px;
+    .block-footer-with-list {
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-left: 2.5%;
+      }
+      &:first-child,
+      &:nth-child(2) {
+        width: 18%;
+      }
+      &:nth-child(3) {
+        width: 13%;
+      }
+      &:nth-child(4) {
+        width: 23%;
+      }
+      .title-to-footer-list {
+        margin-bottom: 18px;
+        font-size: $stonic-links-font-size;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $color-title-info-about-car-three-blocks;
+      }
+      .unordered-list-footer {
+        li {
+          margin-top: 4px;
+          line-height: 13px;
+          a {
+            text-transform: uppercase;
+            font-size: $font-size-nav-with-search;
+            color: $color-subtitle-info-three-blocks;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+#main-navigation {
+  .wrapper-main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+   #logo-in-main-menu {
+     .logo-image {
+      width: 75px;
+     }
+   }
+    .list-for-main-menu {
+      margin: 0;
+      display: flex;
+      li {
+        padding: 10px;
+        a {
+          font-size: $main-menu-links;
+          color: $color-links-main-menu;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .phone-number {
+      background-color: $color-stonic-menu-icons;
+      border-radius: 15px;
+      position: relative;
+      padding: 0 15px;
+      width: 154px;
+      a {
+        font-size: $button-phone-font-size;
+        line-height: 30px;
+        color: rgb(255, 255, 255);
+        float: right;
+      }
+      .icon-in-phone {
+        content: '';
+        background-position: -25px -41px;
+        width: 20px;
+        height: 19px;
+        margin: 6px 5px 0 0;
+        background-image: url("../images/icon.png");
+        position: absolute;
+        top: 0;
+        left: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+//fonts
+@import "global/typography";
+
+//variables
+@import "global/variables";
+@import "global/mixins";
+@import "global/global-style";
+
+//blocks
+@import "blocks/navigation-with-search";
+@import "blocks/main-navigation";
+@import "blocks/stonic-menu";
+@import "blocks/about-car-info-three-blocks";
+@import "blocks/net-with-cars";
+@import "blocks/net-with-car-parts";
+@import "blocks/net-with-yellow-car";
+@import "blocks/dynamic";
+@import "blocks/gear-box";
+@import "blocks/safety";
+@import "blocks/safety-system-three-items";
+@import "blocks/popping-out-car";
+@import "blocks/appearance-breadcrumb-sections";
+@import "blocks/social-links-footer-block";
+@import "blocks/footer-lists";
+@import "blocks/copyright-kia-footer-blocks";
+@import "blocks/slider-exterior";
+@import "blocks/slider-interior";
+@import "blocks/slider-key";
+@import "blocks/progress-bar";
+
+//regions

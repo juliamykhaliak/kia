@@ -1,0 +1,109 @@
+.stonic-menu {
+  background-color: $color-stonic-menu-icons;
+  .stonic-wrap {
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .wrap-stonic-and-menu {
+      display: flex;
+      align-items: center;
+      .stonic-image {
+        padding-right: 11px;
+        .stonic {
+          width: 188px;
+        }
+      }
+      .list-stonic-menu {
+        margin: 0;
+        display: flex;
+        li {
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            margin-left: 20px;
+          }
+          a {
+            color: $main-menu-links-color;
+            font-size: $stonic-links-font-size;
+            line-height: 49px;
+            padding: 0 5px;
+            &:hover {
+              text-decoration: underline;
+              color: rgb(255, 255, 255);
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .block-menu-popping {
+      border-left: 1px solid #920510;
+      border-right: 1px solid #920510;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      padding: 0 22px;
+      position: relative;
+      .unactive-dropdown-menu-stonic {
+        display: none;
+      }
+      .active-dropdown-menu-stonic {
+        display: block;
+        background-color: $color-stonic-menu-icons;
+        width: 185px;
+        z-index: 2;
+        position: absolute;
+        bottom: -132px;
+        right: 0;
+        ul {
+          margin: 0;
+          li {
+            border-top: 1px solid #920510;
+            display: flex;
+            align-items: center;
+            &:nth-child(1),
+            &:nth-child(2) {
+              height: 49px;
+            }
+            &:nth-child(2) a {
+              padding: 15px 13px;
+            }
+            &:nth-child(1) a {
+              padding: 6px 13px;
+            }
+            &:last-child {
+              height: 31px;
+              a {
+                padding: 6px 13px;
+              }
+            }
+            a {
+              font-size: $footer-font-size-appearance-social-links-blocks;
+              color: rgb(255, 255, 255);
+              text-transform: uppercase;
+              border-top: 1px solid #c22e41;
+              font-weight: bold;
+              &:hover {
+                text-decoration: underline;
+              }
+
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $color-block-hover-popupmenu;
+      }
+      #popping-up-menu {
+        background-image: url("../images/icon-arrows.png");
+        background-position: 0 -34px;
+        width: 47px;
+        height: 12px;
+        &:hover {
+          background-position: 0 -48px;
+        }
+      }
+    }
+  }
+}

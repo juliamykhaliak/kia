@@ -1,0 +1,70 @@
+#moving-out-car-section {
+  padding-top: 90px;
+  overflow: hidden;
+  .block-with-moving-out-car {
+    width: 750px;
+    margin: 0 auto 151px;
+    position: relative;
+    img {
+        width: 100%;
+        position: absolute;
+        left: 5000px;
+        transition: all 0.8s;
+    }
+    .pop-out-car {
+      left: 0;
+    }
+  }
+  .items-three-under-car {
+    background-color: $background-undercar-items;
+    padding: 100px 15px 50px;
+    .wrap-three-under-car-items {
+      display: flex;
+      justify-content: center;
+      .item-under-car {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+        &:first-child .icon-under-car {
+          background-position: center 0;
+        }
+        &:nth-child(2) .icon-under-car {
+          background-position: center -200px;
+        }
+        &:nth-child(3) .icon-under-car {
+          background-position: center -400px;
+        }
+        .icon-under-car {
+          background-image: url("../images/images-under-popping-car.png");
+          display: block;
+          width: 100%;
+          background-repeat: no-repeat;
+          height: 130px;
+          vertical-align: top;
+        }
+        .link-item-under-car {
+          color: rgb(255, 255, 255);
+          font-size: 12px;
+          text-decoration: underline;
+          font-weight: bold;
+          &::before {
+            content: '';
+            background-position: right -28px;
+            width: 5px;
+            height: 7px;
+            margin: 6px 5px 0 -10px;
+            display: inline-block;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            white-space: nowrap;
+            vertical-align: top;
+            background-image: url("../images/icon.png");
+          }
+        }
+      }
+    }
+  }
+}

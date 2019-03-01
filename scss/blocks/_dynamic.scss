@@ -1,0 +1,23 @@
+#dynamic-section {
+  @include dynamic-safe-sections-background();
+  background-image: url("../images/background-image-dynamic-section.jpg");
+  .dynamic-wrap {
+    color: rgb(255, 255, 255);
+    padding: 37px 10px 0 10px;
+    @include text-shadow-black-titles();
+    .dynamic-title {
+      padding-bottom: 37px;
+      .word-dynamic {
+        @include dynamic-safe-sections-title();
+      }
+    }
+    .dynamic-description {
+      .dynamic-title-description {
+        @include dynamic-safety-sections-title-description();
+      }
+      .under-title-description-dynamic {
+        @include dynamic-safety-sections-description-text();
+      }
+    }
+  }
+}

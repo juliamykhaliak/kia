@@ -1,0 +1,33 @@
+#gear-box {
+  .gear-box-wrapper {
+    padding: 50px 10px 20px;
+    .image-gear-box {
+      width: 451px;
+      height: 338px;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        transition: all .5s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+    }
+    .gear-box-description {
+      width: 451px;
+      color: rgb(0, 0, 0);
+      .title-gear-box {
+        font-size: $button-phone-font-size;
+        font-weight: bold;
+        margin: 15px 0 10px;
+        transition: all .5s;
+      }
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
